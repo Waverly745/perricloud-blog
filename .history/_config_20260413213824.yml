@@ -1,0 +1,125 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+
+# Site
+title: PerriCloud Blog
+subtitle: ''
+description: 'My personal blog'
+keywords:
+author: young weip
+language: zh-CN
+timezone: America/Los_Angeles
+
+# URL
+url: https://blog.perricloud.com
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+meta_generator: true
+
+# Date / Time format
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime'
+
+# Pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude files
+include:
+exclude:
+ignore:
+
+# Extensions
+theme: landscape
+
+# Deployment
+deploy:
+  type:
+
+# Custom Data
+research_achievements:
+  research_direction: "基于忆阻器的稀疏神经网络芯片关键技术研究"
+
+  publications:
+    - year: 2025
+      title: "A Bit Level Weight Reordering Strategy Based on Column Similarity to Explore Weight Sparsity in RRAM-based NN Accelerator"
+      description: "设计稀疏神经网络加速器，利用 bit 级别的重排序算法降低计算和存储开销"
+      venue: "International Conference on Parallel and Distributed Systems (ICPADS 2025)"
+      status: "录用"
+
+    - year: 2025
+      title: "Segmented Exponent Alignment and Dynamic Wordline Activation for Floating-Point Analog CIM Macros"
+      description: "利用分段指数对齐与动态字线激活技术解决浮点存算宏中的高延迟等问题"
+      venue: "International Conference on Electronics Circuits and Systems (ICECS 2025)"
+      status: "录用"
+
+    - year: 2024
+      title: "An Integration and Time-Sampling based Readout Circuit with Current Compensation for Parallel MAC Operations in RRAM Arrays"
+      description: "基于 28nm 工艺设计，对忆阻器阵列乘累加电流利用时间采样实现量化读出"
+      venue: "IEEE International Symposium on Circuits and Systems (ISCAS 2024)"
+      status: "发表"
+
+    - year: 2024
+      title: "An Energy-Efficient Reconfigurable 18/12-Bit 1MS/s Pipelined-SAR ADC"
+      description: "基于 180nm 工艺设计，1 MS/s 采样率、18/12-bit 可重构低功耗 SAR ADC"
+      venue: "AEU - International Journal of Electronics and Communications"
+      status: "发表"
+
+  ongoing_work:
+    - journal: "IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS)"
+      status: "1篇修改中"
+
+    - journal: "IEEE Transactions on Circuits and Systems II (TCAS-II)"
+      status: "1篇修改中"
